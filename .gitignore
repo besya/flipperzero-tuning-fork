@@ -5,4 +5,7 @@ dist/*
 .editorconfig
 .env
 .ufbt
+.cache
 .nova
+.DS_Store
+compile_commands.json
