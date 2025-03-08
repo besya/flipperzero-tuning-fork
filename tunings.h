@@ -1,38 +1,22 @@
 #ifndef TUNINGS_H
 #define TUNINGS_H
 
-#include "notes.h"
 #include <stdint.h>
+#include "constants.h"
+#include "types.h"
+#include "notes.h"
 
-#define MAX_LABEL_LENGTH     20
-#define MAX_NOTES_PER_TUNING 20
+// MISCELLANEOUS
+// Fork Tunings
+const TUNING ForkCommon = {"Common", {{"A4 (440)", 440.00f}}, 1};
+const TUNING ForkSarti = {"Sarti's", {{"A4 (436)", 436.00f}}, 1};
+const TUNING ForkMid19Century = {"1858", {{"A4 (435)", 435.00f}}, 1};
+const TUNING Fork18Century = {"1750-1820", {{"A4 (423.5)", 423.50f}}, 1};
+const TUNING ForkVerdi = {"Verdi's ", {{"C4 (256.00)", 256.00f}}, 1};
 
-typedef struct {
-    char label[MAX_LABEL_LENGTH];
-    float frequency;
-} NOTE;
-
-typedef struct {
-    char label[MAX_LABEL_LENGTH];
-    uint8_t notes_length;
-    NOTE notes[MAX_NOTES_PER_TUNING];
-} TUNING;
-
-const TUNING TuningForks = {
-    "Tuning forks",
-    6,
-    {
-        {"Common A4 (440)", 440.00f},
-        {"Sarti's A4 (436)", 436.00f},
-        {"1858 A4 (435)", 435.00f},
-        {"Verdi's A4 (432)", 432.00f},
-        {"1750-1820 A4 (423.5)", 423.50f},
-        {"Verdi's C4 (256.00)", 256.00f},
-    }};
-
+// Other Tunings
 const TUNING ScientificPitch = {
-    "Scientific pitch",
-    12,
+    "Scientific Pitch",
     {{"C0 (16Hz)", 16.0f},
      {"C1 (32Hz)", 32.0f},
      {"C2 (64Hz)", 64.0f},
@@ -44,145 +28,140 @@ const TUNING ScientificPitch = {
      {"C8 (4096Hz)", 4096.0f},
      {"C9 (8192Hz)", 8192.0f},
      {"C10 (16384Hz)", 16384.0f},
-     {"C11 (32768Hz)", 32768.0f}}};
+     {"C11 (32768Hz)", 32768.0f}},
+    12};
 
-const TUNING GuitarStandard6 = {
-    "Guitar Standard 6",
-    6,
+// GUITAR
+// 6 strings
+const TUNING Guitar6Standard = {
+    "Standard",
     {{"String 1", E4},
      {"String 2", B3},
      {"String 3", G3},
      {"String 4", D3},
      {"String 5", A2},
-     {"String 6", E2}}};
+     {"String 6", E2}},
+    6};
 
-const TUNING GuitarDropD6 = {
-    "Guitar Drop D 6",
-    6,
+const TUNING Guitar6DropD = {
+    "Drop D",
     {{"String 1", E4},
      {"String 2", B3},
      {"String 3", G3},
      {"String 4", D3},
      {"String 5", A2},
-     {"String 6", D2}}};
+     {"String 6", D2}},
+    6};
 
-const TUNING GuitarD6 = {
-    "Guitar D 6",
-    6,
+const TUNING Guitar6D = {
+    "Standard D",
     {{"String 1", D4},
      {"String 2", A3},
      {"String 3", F3},
      {"String 4", C3},
      {"String 5", G2},
-     {"String 6", D2}}};
+     {"String 6", D2}},
+    6};
 
-const TUNING GuitarDropC6 = {
-    "Guitar Drop C 6",
-    6,
+const TUNING Guitar6DropC = {
+    "Drop C",
     {{"String 1", D4},
      {"String 2", A3},
      {"String 3", F3},
      {"String 4", C3},
      {"String 5", G2},
-     {"String 6", C2}}};
+     {"String 6", C2}},
+    6};
 
-const TUNING GuitarStandard7 = {
-    "Guitar Standard 7",
-    7,
+// 7 strings
+const TUNING Guitar7Standard = {
+    "Standard",
     {{"String 1", E4},
      {"String 2", B3},
      {"String 3", G3},
      {"String 4", D3},
      {"String 5", A2},
      {"String 6", E2},
-     {"String 7", B1}}};
+     {"String 7", B1}},
+    7};
 
-const TUNING BassStandard4 = {
-    "Bass Standard 4",
-    4,
-    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}}};
+const TUNING Guitar7DropA = {
+    "Standard",
+    {{"String 1", E4},
+     {"String 2", B3},
+     {"String 3", G3},
+     {"String 4", D3},
+     {"String 5", A2},
+     {"String 6", E2},
+     {"String 7", A1}},
+    7};
 
-const TUNING BassStandardTenor4 = {
-    "Bass Stand Tenor 4",
-    4,
-    {{"String 1", C3}, {"String 2", G2}, {"String 3", D2}, {"String 4", A1}}};
+// BASS
+// 4 strings
+const TUNING Bass4Standard = {
+    "Standard",
+    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}},
+    4};
 
-const TUNING BassStandard5 = {
-    "Bass Standard 5",
-    5,
-    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}, {"String 5", B0}}};
+const TUNING Bass4Tenor = {
+    "Tenor",
+    {{"String 1", C3}, {"String 2", G2}, {"String 3", D2}, {"String 4", A1}},
+    4};
 
-const TUNING BassStandardTenor5 = {
-    "Bass Stand Tenor 5",
-    5,
-    {{"String 1", C3}, {"String 2", G2}, {"String 3", D2}, {"String 4", A1}, {"String 5", E1}}};
+const TUNING Bass4DropD = {
+    "Drop D",
+    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", D1}},
+    4};
 
-const TUNING BassDropD4 = {
-    "Bass Drop D 4",
-    4,
-    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", D1}}};
+const TUNING Bass4D = {
+    "D",
+    {{"String 1", F2}, {"String 2", C2}, {"String 3", G1}, {"String 4", D1}},
+    4};
 
-const TUNING BassD4 = {
-    "Bass D 4",
-    4,
-    {{"String 1", F2}, {"String 2", C2}, {"String 3", G1}, {"String 4", D1}}};
+// 5 strings
+const TUNING Bass5Standard = {
+    "Standard",
+    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}, {"String 5", B0}},
+    5};
 
-const TUNING BassDropA5 = {
-    "Bass Drop A 5",
-    5,
-    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}, {"String 5", A0}}};
+const TUNING Bass5Tenor = {
+    "Tenor",
+    {{"String 1", C3}, {"String 2", G2}, {"String 3", D2}, {"String 4", A1}, {"String 5", E1}},
+    5};
+const TUNING Bass5DropA = {
+    "Drop A",
+    {{"String 1", G2}, {"String 2", D2}, {"String 3", A1}, {"String 4", E1}, {"String 5", A0}},
+    5};
 
-const TUNING UkuleleStandard4 = {
-    "Ukulele Standard 4",
-    4,
-    {{"String 1", A4}, {"String 2", E4}, {"String 3", C4}, {"String 4", G4}}};
+// UKULELE
+// 4 strings
+const TUNING Ukulele4Standard = {
+    "Standard",
+    {{"String 1", A4}, {"String 2", E4}, {"String 3", C4}, {"String 4", G4}},
+    4};
 
-const TUNING Banjo5 = {
-    "Banjo Open G 5",
-    5,
-    {{"String 1", D4}, {"String 2", B3}, {"String 3", G3}, {"String 4", D3}, {"String 5", G4}}};
+// BANJO
+// 5 strings
+const TUNING Banjo5Standard = {
+    "Standard",
+    {{"String 1", D4}, {"String 2", B3}, {"String 3", G3}, {"String 4", D3}, {"String 5", G4}},
+    5};
 
-const TUNING CigarBox3 = {
-    "Cigar Box Open G 3",
-    3,
-    {
-        {"String 1", G3},
-        {"String 2", D3},
-        {"String 3", G2},
-    }};
+// CIGAR BOX
+// 3 strings
+const TUNING CigarBox3OpenG = {"Open G", {{"String 1", G3}, {"String 2", D3}, {"String 3", G2}}, 3};
 
-const TUNING CigarBox4 = {
-    "Cigar Box Open G 4",
-    4,
-    {
-        {"String 1", D4},
-        {"String 2", B3},
-        {"String 3", G3},
-        {"String 4", D3},
-    }};
+const TUNING CigarBox3OpenD = {
+    "Open D",
+    {{"String 1", Fs4}, {"String 2", A3}, {"String 3", D3}},
+    3};
 
-#define TUNINGS_COUNT 18
+const TUNING CigarBox3OpenA = {"Open A", {{"String 1", A4}, {"String 2", E4}, {"String 3", A3}}, 3};
 
-TUNING TuningList[TUNINGS_COUNT] = {
-    ScientificPitch,
-    TuningForks,
-
-    GuitarStandard6,
-    GuitarDropD6,
-    GuitarD6,
-    GuitarDropC6,
-    GuitarStandard7,
-
-    BassStandard4,
-    BassStandardTenor4,
-    BassStandard5,
-    BassStandardTenor5,
-    BassDropD4,
-    BassD4,
-    BassDropA5,
-    UkuleleStandard4,
-    Banjo5,
-    CigarBox3,
-    CigarBox4};
+// 4 strings
+const TUNING CigarBox4OpenG = {
+    "Open G",
+    {{"String 1", D4}, {"String 2", B3}, {"String 3", G3}, {"String 4", D3}},
+    4};
 
 #endif //TUNINGS_H

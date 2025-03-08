@@ -3,7 +3,10 @@
 A tuning fork for the [Flipper Zero](https://flipperzero.one/) device.
 Allows to play different notes in different pitches.
 
-![screenshot](img/tuning_fork.gif)
+![screenshot_1](img/screenshot_1.png)
+![screenshot_2](img/screenshot_2.png)
+![screenshot_3](img/screenshot_3.png)
+![screenshot_4](img/screenshot_4.png)
 
 ## Features
 - Tuning forks (440Hz, 432Hz, etc.)
@@ -13,13 +16,20 @@ Allows to play different notes in different pitches.
 - Guitar D (6 strings)
 - Guitar Drop C (6 strings)
 - Guitar Standard (7 strings)
+- Guitar Drop A (7 strings)
 - Bass Standard (4 strings)
-- Bass Standard Tenor (4 strings)
-- Bass Standard (5 strings)
-- Bass Standard Tenor (5 strings)
+- Bass Tenor (4 strings)
 - Bass Drop D (4 strings)
 - Bass D (4 strings)
+- Bass Standard (5 strings)
+- Bass Tenor (5 strings)
 - Bass Drop A (5 strings)
+- Ukulele Standard (4 strings)
+- Banjo Standard (5 strings)
+- Cigar Box Open G (3 string)
+- Cigar Box Open D (3 string)
+- Cigar Box Open A (3 string)
+- Cigar Box Open G (4 string)
 
 ## Development
 
