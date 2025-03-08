@@ -64,9 +64,9 @@ ufbt launch
 ## Acknowledgements
 
 Special thanks to:
-- [@xMasterX] for distributing and support
-- [@Willy-JL] for fixes
-- [@panki27] for inspiration
+- [@xMasterX](https://github.com/xMasterX) for distributing and support
+- [@Willy-JL](https://github.com/@Willy-JL) for fixes
+- [@panki27](https://github.com/@panki27) for inspiration
 - The Flipper Zero community for support and feedback
 
 ## License
