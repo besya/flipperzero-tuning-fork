@@ -137,7 +137,31 @@ const TUNING UkuleleStandard4 = {
     4,
     {{"String 1", A4}, {"String 2", E4}, {"String 3", C4}, {"String 4", G4}}};
 
-#define TUNINGS_COUNT 15
+const TUNING Banjo5 = {
+    "Banjo Open G 5",
+    5,
+    {{"String 1", D4}, {"String 2", B3}, {"String 3", G3}, {"String 4", D3}, {"String 5", G4}}};
+
+const TUNING CigarBox3 = {
+    "Cigar Box Open G 3",
+    3,
+    {
+        {"String 1", G3},
+        {"String 2", D3},
+        {"String 3", G2},
+    }};
+
+const TUNING CigarBox4 = {
+    "Cigar Box Open G 4",
+    4,
+    {
+        {"String 1", D4},
+        {"String 2", B3},
+        {"String 3", G3},
+        {"String 4", D3},
+    }};
+
+#define TUNINGS_COUNT 18
 
 TUNING TuningList[TUNINGS_COUNT] = {
     ScientificPitch,
@@ -156,7 +180,9 @@ TUNING TuningList[TUNINGS_COUNT] = {
     BassDropD4,
     BassD4,
     BassDropA5,
-
-    UkuleleStandard4};
+    UkuleleStandard4,
+    Banjo5,
+    CigarBox3,
+    CigarBox4};
 
 #endif //TUNINGS_H
