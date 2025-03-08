@@ -149,7 +149,7 @@ const TUNING Banjo5Standard = {
 
 // CIGAR BOX
 // 3 strings
-const TUNING CigarBox3OpenG = {"Open G", {{"String 1", G4}, {"String 2", D4}, {"String 3", G3}}, 3};
+const TUNING CigarBox3OpenG = {"Open G", {{"String 1", G3}, {"String 2", D3}, {"String 3", G2}}, 3};
 
 const TUNING CigarBox3OpenD = {
     "Open D",
