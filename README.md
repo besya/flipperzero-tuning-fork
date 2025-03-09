@@ -4,14 +4,6 @@ Tuning fork for tuning musical instruments and more
 
 ![tuning_fork](img/tuning_fork.gif)
 
-## Usage
-
-Use Left/Right, Select, Back for navigation
-
-Use Up/Down for volume control
-
-Use Play/Stop for playing a note
-
 ## Tunings
  - Guitar
     - 6 strings: Standard, Drop D, DADGAD (Dsus4), Standard D, C#G#C#F#G#C# (C#sus4), Drop C, CGCFGC
