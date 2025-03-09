@@ -1,4 +1,4 @@
-## 2.1
+## 2.1 (2025-03-09)
   - New tunings
     - Guitar 6 strings
       - DADGAD
@@ -12,7 +12,7 @@
   - UI improvements
     - Display note names
 
-## 2.0
+## 2.0 (2025-03-08)
   - New structure
     - Instruments
     - Variations
@@ -22,7 +22,7 @@
     - Banjo 5 strings, Cigar Box 3 and 4 strings by @GrafOrlok
   - UI improvements
 
-## 1.3
+## 1.3 (2025-03-08)
   - Sync updates from @xMasterX
   - New tunings
     - Ukulele by @portalsoup
