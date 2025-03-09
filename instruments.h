@@ -1,15 +1,24 @@
 #include "tunings.h"
 
-const TUNING Guitar6Tunings[] = {Guitar6Standard, Guitar6DropD, Guitar6D, Guitar6DropC};
-const TUNING Guitar7Tunings[] = {Guitar7Standard, Guitar7DropA};
-const VARIATION GuitarVariations[] = {
-    {"6 strings", (TUNING*)Guitar6Tunings, 4},
-    {"7 strings", (TUNING*)Guitar7Tunings, 2}};
+const TUNING Guitar6Tunings[] = {
+    Guitar6Standard,
+    Guitar6DropD,
+    Guitar6DADGAD,
+    Guitar6D,
+    Guitar6CGCFGCSharp,
+    Guitar6DropC,
+    Guitar6CGCFGC};
 
-const TUNING Bass4Tunings[] = {Bass4Standard, Bass4Tenor, Bass4DropD, Bass4D};
+const TUNING Guitar7Tunings[] = {Guitar7Standard, Guitar7DropA, Guitar7A};
+const VARIATION GuitarVariations[] = {
+    {"6 strings", (TUNING*)Guitar6Tunings, 7},
+    {"7 strings", (TUNING*)Guitar7Tunings, 3}};
+
+const TUNING Bass4Tunings[] =
+    {Bass4Standard, Bass4Tenor, Bass4DropD, Bass4D, Bass4DropCSharp, Bass4DropC};
 const TUNING Bass5Tunings[] = {Bass5Standard, Bass5Tenor, Bass5DropA};
 const VARIATION BassVariations[] = {
-    {"4 strings", (TUNING*)Bass4Tunings, 4},
+    {"4 strings", (TUNING*)Bass4Tunings, 6},
     {"5 strings", (TUNING*)Bass5Tunings, 3}};
 
 const TUNING Ukulele4Tunings[] = {Ukulele4Standard};
@@ -35,7 +44,7 @@ const INSTRUMENT Instruments[] = {
     {"Bass", (VARIATION*)BassVariations, 2},
     {"Ukulele", (VARIATION*)UkuleleVariations, 1},
     {"Banjo", (VARIATION*)BanjoVariations, 1},
-    {"CigarBox", (VARIATION*)CigarBoxVariations, 2},
+    {"Cigar Box", (VARIATION*)CigarBoxVariations, 2},
     {"Miscellaneous", (VARIATION*)MiscellaneousVariations, 2}};
 
 #define INSTRUMENTS_COUNT 6

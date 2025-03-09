@@ -1,35 +1,33 @@
 # Tuning Fork
 
-A tuning fork for the [Flipper Zero](https://flipperzero.one/) device.
-Allows to play different notes in different pitches.
+Tuning fork for tuning musical instruments and more
 
-![screenshot_1](img/screenshot_1.png)
-![screenshot_2](img/screenshot_2.png)
-![screenshot_3](img/screenshot_3.png)
-![screenshot_4](img/screenshot_4.png)
+![tuning_fork](img/tuning_fork.gif)
 
-## Features
-- Tuning forks (440Hz, 432Hz, etc.)
-- Scientific pitch (..., 256Hz, 512Hz, 1024Hz, ...)
-- Guitar Standard (6 strings)
-- Guitar Drop D (6 strings)
-- Guitar D (6 strings)
-- Guitar Drop C (6 strings)
-- Guitar Standard (7 strings)
-- Guitar Drop A (7 strings)
-- Bass Standard (4 strings)
-- Bass Tenor (4 strings)
-- Bass Drop D (4 strings)
-- Bass D (4 strings)
-- Bass Standard (5 strings)
-- Bass Tenor (5 strings)
-- Bass Drop A (5 strings)
-- Ukulele Standard (4 strings)
-- Banjo Standard (5 strings)
-- Cigar Box Open G (3 string)
-- Cigar Box Open D (3 string)
-- Cigar Box Open A (3 string)
-- Cigar Box Open G (4 string)
+## Usage
+
+Use Left/Right, Select, Back for navigation
+
+Use Up/Down for volume control
+
+Use Play/Stop for playing a note
+
+## Tunings
+ - Guitar
+    - 6 strings: Standard, Drop D, DADGAD (Dsus4), Standard D, C#G#C#F#G#C# (C#sus4), Drop C, CGCFGC
+    - 7 strings: Standard, Drop A, Standard A
+ - Bass
+    - 4 strings: Standard, Tenor, Drop D, Standard D, Drop C#, Drop C
+    - 5 strings: Standard, Tenor, Drop A
+ - Ukulele
+    - 4 strings: Standard
+ - Banjo
+    - 5 strings: Standard
+ - Cigar Box
+    - 3 strings: Open G, Open D, Open A
+    - 4 strings: Open G
+ - Tuning Forks: Common A4 (440Hz), Sarti's A4 (436Hz), 1858 A4 (435Hz), 1750-1820 A4 (423.5Hz), Verdi's C4 (256Hz)
+  - Scientific Pitch: C0 (16Hz), C1 (32Hz), C2 (64Hz), C3 (128Hz), C4 (256Hz), C5 (512Hz), C6 (1024Hz), C7 (2048Hz), C8 (4096Hz), C9 (8192Hz), C10 (16384Hz), C11 (32768Hz)
 
 ## Development
 
