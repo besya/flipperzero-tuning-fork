@@ -1,11 +1,11 @@
 dist/*
 .vscode
-.clang-format
 .clangd
-.editorconfig
 .env
 .ufbt
 .cache
-.nova
+.nova/*
+!.nova/Tasks/
+!.nova/Tasks/Dev.json
 .DS_Store
 compile_commands.json

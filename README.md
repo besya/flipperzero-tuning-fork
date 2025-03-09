@@ -51,6 +51,14 @@ ufbt launch
 ```
 > This command deploys app to Flipper Zero and launches an application
 
+### Nova
+For Nova there is a helpful script to setup dev env.
+
+1. Install C-Dragon extension
+2. Run `./nova.sh`
+3. Update C-Dragon settings to use Custom clangd and set Language server Path to one produced by `./nova.sh` command
+4. Restart Nova and enjoy
+
 ## Contibuting
 
 1. Fork repo
